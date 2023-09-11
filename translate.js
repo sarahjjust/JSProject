@@ -1,10 +1,8 @@
 const uri = 'https://localhost:7071/Translation';
-//const uri = 'api/Translation'
 
 function translate() {
     const inputWord = document.querySelector("#toTranslate").value;
-    let answer = "";
-    fetch(uri)
+    fetch(uri + '/' + inputWord)
         .then(response => response.text())
         .then(_update)
         .catch(error => console.error('Unable to get items.', error));
