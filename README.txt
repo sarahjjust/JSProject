@@ -1,1 +1,5 @@
 As a Japanese learner, I want to be able to quickly look up translations of English words to help with my studies. I want to be able to type an English word into an input box and press the translate button, and see the translation displayed next to it. Some additional specifications are that capitalization shouldn't matter, and if the given word is not in the dictionary, it should indicate that.
+
+Objective 2:
+Turn it into a game. As a user, I will be shown an English word, and will choose the correct translation out of three Japanese words, two of which are random. On a success, it will display a success message, and on a failure, it will display a failure message. In both cases, on user confirmation, it will reset with a new English word and new random Japanese words. All words will be taken from the 1000 most common English words in the translation project's dictionary.
+It will be written in typescript.
