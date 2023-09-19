@@ -1,8 +1,9 @@
 <html>
-    <body>
-        <script src="translate.js"></script>
-        <input id="toTranslate"></input>
-        <button onclick="translate()">Translate!</button>
-        <div id="answer"></div>
+    <body onload="resetGame()">
+        <script src="trans_game.js"></script>
+        <div id="jpWord"></div>
+        <button id="b0" onclick="checkAnswer(0)"></button>
+        <button id="b1" onclick="checkAnswer(1)"></button>
+        <button id="b2" onclick="checkAnswer(2)"></button>
     </body>
 </html>

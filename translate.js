@@ -2,7 +2,7 @@ const uri = 'https://localhost:7071/Translation';
 
 function translate() {
     const inputWord = document.querySelector("#toTranslate").value;
-    fetch(uri + '/' + inputWord)
+    fetch(uri + '/en/jp/' + inputWord)
         .then(response => response.text())
         .then(_update)
         .catch(error => console.error('Unable to get items.', error));
